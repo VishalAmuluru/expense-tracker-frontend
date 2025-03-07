@@ -82,5 +82,4 @@ License
 This project is open source and available under the MIT License.
 
 Thanks for checking out my project! If you have any questions or need further details, feel free to reach out.
-
-This README is written in a friendly, conversational tone to help recruiters and other developers quickly understand what the frontend does and how it was built. Feel free to adjust or expand it based on your specific project details!
+!
