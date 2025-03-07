@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "composite": true,
+    "declaration": true,
+    "noEmit": false,
+    "skipLibCheck": true
+  },
+  "include": ["vite.config.ts", "."],
+  "exclude": ["node_modules", "dist"]
+}
