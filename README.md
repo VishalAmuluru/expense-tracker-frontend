@@ -1,58 +1,86 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+Expense Tracker Frontend
+Hi there! I'm Vishal Amuluru, and welcome to the Expense Tracker Frontend repository. This project is part of a larger expense tracker application that I built to help users keep an eye on their spending and manage their budgets with ease.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What It Does
+This frontend application provides a clean and responsive interface where users can:
 
-Currently, two official plugins are available:
+View their expenses: Check out a summary and detailed view of daily spending.
+Manage budgets: Create and update budget plans, and see how your spending measures up.
+User Authentication: Login and register securely to keep your data private.
+Data Visualization: Enjoy visual charts that help you understand your spending habits.
+Theming: Switch between light and dark modes for a comfortable viewing experience.
+Built With
+React: For building the user interface.
+Vite: For a fast and modern development experience.
+TypeScript: For adding strong typing and improving code reliability.
+Styled Components: For writing CSS in JavaScript and theming.
+Axios: For handling HTTP requests to the backend API.
+Getting Started
+If you’d like to run this project locally, follow these simple steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clone the repository:
 
-## Expanding the ESLint configuration
+bash
+Copy
+Edit
+git clone https://github.com/VishalAmuluru/expense-tracker-frontend.git
+cd expense-tracker-frontend
+Install the dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+bash
+Copy
+Edit
+npm install
+or if you prefer Yarn:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+bash
+Copy
+Edit
+yarn
+Run the development server:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+bash
+Copy
+Edit
+npm run dev
+This will start the app, and you can view it at http://localhost:3000.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Build for production:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
-=======
-# expense-tracker-frontend
->>>>>>> e985cb13501343a09878557754c86ae147eb64b4
+When you’re ready to deploy, run:
+
+bash
+Copy
+Edit
+npm run build
+This will create a production-ready bundle in the dist/ folder.
+
+Project Structure
+Here's a quick overview of the project structure:
+
+php
+Copy
+Edit
+expense-tracker-frontend/
+├── public/                 # Static assets like images and fonts
+├── src/
+│   ├── components/         # Reusable components (e.g., forms, toggles, charts)
+│   ├── pages/              # Page-level components (e.g., Home, Login, Register, Budgets, Expenses)
+│   ├── services/           # API service configuration using Axios
+│   ├── styles/             # Global styles and theming configurations
+│   ├── App.tsx             # Main application component with routing
+│   └── main.tsx            # Entry point of the application
+├── package.json            # Project configuration and dependencies
+└── vite.config.ts          # Vite configuration for development and proxy setup
+Why I Built This
+I created this project to demonstrate my ability to build modern, user-friendly web applications. The interface is designed to be intuitive and responsive, ensuring a great user experience whether you're on a desktop or mobile device. It also shows my skills in integrating with a backend service using best practices like Axios interceptors and a Vite proxy.
+
+Contributing
+I’m always open to suggestions or improvements. If you’d like to contribute, feel free to open an issue or submit a pull request.
+
+License
+This project is open source and available under the MIT License.
+
+Thanks for checking out my project! If you have any questions or need further details, feel free to reach out.
+
+This README is written in a friendly, conversational tone to help recruiters and other developers quickly understand what the frontend does and how it was built. Feel free to adjust or expand it based on your specific project details!
